@@ -1,0 +1,18 @@
+
+.root {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+}
+
+.leftTopic {
+    position: absolute;
+    left: 20px;
+}
+
+.rightTopic {
+    position: absolute;
+    right: 20px;
+}
+
