@@ -1,5 +1,6 @@
 import Header from "./Components/Header"
-import Topic from "./Components/Topic"
+import IntroSection from "./Components/IntroSection"
+import AboutSection from "./Components/AboutSection"
 
 import './index.css'
 
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
       <Header />
-      <Topic text="Welcome to my profile page111"/>
+      <IntroSection text="Welcome to my profile page"/>
+      <AboutSection text= "Hello World!"/>
       <div className='extend' />
     </>
   )

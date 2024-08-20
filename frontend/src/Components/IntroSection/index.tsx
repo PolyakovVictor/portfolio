@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import s from './Style/Header.module.css';
 import '../../index.css';
-import { TopicProps } from '../../Models/interfeces';
+import { IntroSectionProps } from '../../Models/interfeces';
 import { initializeParallax } from '../../Logic/parallax';
 
-const Topic: React.FC<TopicProps> = ({ text }) => {
+const IntroSection: React.FC<IntroSectionProps> = ({ text }) => {
     const parallaxRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -24,12 +24,14 @@ const Topic: React.FC<TopicProps> = ({ text }) => {
     }, []);
 
     return (
-        <div className="pin" ref={parallaxRef}>
-            <div className={s.main}>
-                <h1 className={s.topic}>{ text }</h1>
+        <section>
+            <div className="pin" ref={parallaxRef}>
+                <div className={s.main}>
+                    <h1 className={s.topic}>{ text }</h1>
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 
-export default Topic;
+export default IntroSection;
