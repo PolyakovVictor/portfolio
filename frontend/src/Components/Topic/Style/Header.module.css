@@ -1,0 +1,10 @@
+.main {
+    position: relative;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.topic {
+    font-size: 11vw;
+    font-style: inherit;
+}

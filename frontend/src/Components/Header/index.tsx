@@ -4,7 +4,7 @@ import s from "./Style/Header.module.css"
 
 const Header = () => {
     return (
-        <div className={s.root}>
+        <div className={s.main}>
             <div className={s.leftTopic}>
                 <h1>left Header</h1>
             </div>
