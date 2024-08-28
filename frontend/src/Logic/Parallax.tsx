@@ -4,8 +4,8 @@ import { ParallaxEffectProps } from "../Models/interfeces";
 export function initializeParallax({
     element,
     lagAmount = 50,
-    maxSpeed = 100,
-    frameRate = 20
+    maxSpeed = 50,
+    frameRate = 5
 }: ParallaxEffectProps): void {
     let scrollTop = 0;
     let pinTop = 0;

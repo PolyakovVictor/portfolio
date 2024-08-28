@@ -1,16 +1,28 @@
 .main {
     display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.content {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-    width: 100vw;
+    align-items: center;
 }
 
-.leftHalf {
+.leftBox {
+    padding-left: 100px;
 }
 
-.leftHalf h1 {
-    font-size: 50px;
-}
 
-.rightHalf {
+.rightBox {
     max-width: 50vw;
+    padding-right: 100px;
+}
+
+
+.leftBox h1 {
+    font-size: 50px;
 }

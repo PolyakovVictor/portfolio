@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import s from './Style/Header.module.css';
 import '../../index.css';
 import { IntroSectionProps } from '../../Models/interfeces';
-import { initializeParallax } from '../../Logic/parallax';
+import { initializeParallax } from '../../Logic/Parallax';
 
 const IntroSection: React.FC<IntroSectionProps> = ({ text }) => {
     const parallaxRef = useRef<HTMLDivElement>(null);
@@ -11,12 +11,7 @@ const IntroSection: React.FC<IntroSectionProps> = ({ text }) => {
         const element = parallaxRef.current;
 
         if (element) {
-            initializeParallax({
-                element,
-                lagAmount: 50,
-                maxSpeed: 100,
-                frameRate: 20
-            });
+            initializeParallax({element});
         }
 
         return () => {
@@ -25,9 +20,9 @@ const IntroSection: React.FC<IntroSectionProps> = ({ text }) => {
 
     return (
         <section>
-            <div className="pin" ref={parallaxRef}>
+            <div className="pin">
                 <div className={s.main}>
-                    <h1 className={s.topic}>{ text }</h1>
+                    <h1 className={s.topic} ref={parallaxRef}>{ text }</h1>
                 </div>
             </div>
         </section>
